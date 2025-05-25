@@ -11,6 +11,12 @@
 	<groupId>ProyectoSpringboot</groupId>
 	<artifactId>Perfulandia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>ventas-service</module>
+		<module>inventario-service</module>
+		<module>reportes-service</module>
+	</modules>
 	<name>Perfulandia</name>
 	<description>Proyecto Desarrollo Fullstack l</description>
 	<url/>

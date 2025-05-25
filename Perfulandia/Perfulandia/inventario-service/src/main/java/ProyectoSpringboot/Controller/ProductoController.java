@@ -1,4 +1,4 @@
-package ProyectoSpringboot.Perfulandia.Controller;
+package ProyectoSpringboot.Controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import ProyectoSpringboot.Perfulandia.Model.Producto;
-import ProyectoSpringboot.Perfulandia.Service.ProductoService;
+import ProyectoSpringboot.Model.Producto;
+import ProyectoSpringboot.Service.ProductoService;
 import lombok.RequiredArgsConstructor;
 
 @RestController

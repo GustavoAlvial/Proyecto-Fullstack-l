@@ -1,12 +1,12 @@
-package ProyectoSpringboot.Perfulandia.Service;
+package ProyectoSpringboot.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import ProyectoSpringboot.Perfulandia.Model.Producto;
-import ProyectoSpringboot.Perfulandia.Repository.ProductoRepository;
+import ProyectoSpringboot.Model.Producto;
+import ProyectoSpringboot.Repository.ProductoRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service
