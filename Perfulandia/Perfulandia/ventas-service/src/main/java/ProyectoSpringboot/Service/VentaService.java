@@ -44,4 +44,8 @@ public class VentaService {
     public List<Object[]> obtenerProductosMasVendidos() {
         return detalleVentaRepository.findProductosMasVendidos();
     }
+
+    public Double calcularTotalVentas() {
+        return (double) ventaRepository.count();
+    }
 }

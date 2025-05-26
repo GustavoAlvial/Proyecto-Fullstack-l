@@ -30,12 +30,17 @@ public class VentaController {
         return new ResponseEntity<>(nuevaVenta, HttpStatus.CREATED);
     }
 
-    @GetMapping
+    @GetMapping("/listar")
     public ResponseEntity<List<Venta>> obtenerVentas() {
         List<Venta> ventas = ventaService.listarVentas();
         return new ResponseEntity<>(ventas, HttpStatus.OK);
     }
 
+    @GetMapping("/total")
+    public ResponseEntity<Double> obtenerTotalVentas() {
+        Double total = ventaService.calcularTotalVentas();
+        return new ResponseEntity<>(total, HttpStatus.OK);
+    }
     @GetMapping("/{id}")
     public ResponseEntity<Venta> obtenerVentaPorId(@PathVariable Long id) {
         return ventaService.buscarVentaPorId(id)
@@ -46,5 +51,5 @@ public class VentaController {
     @GetMapping("/reporte/productos-mas-vendidos")
     public ResponseEntity<List<Object[]>> obtenerProductosMasVendidos() {
         return ResponseEntity.ok(ventaService.obtenerProductosMasVendidos());
-    }
+    }//Más adelante se puede agregar un ReporteVentaController para mantener separado el código de reportes
 }
